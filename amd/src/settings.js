@@ -52,20 +52,20 @@ define(['jquery',
                 }).fail(notification.exception);
         });
         promise.fail(notification.exception);
-    }
+    };
 
     TableActions.prototype.registerEvents = function() {
-        
+
         $(ACTIONS.PREVIOUS).click(function() {
             offset.value = parseInt(offset.value) - 10;
             loadingData(parseInt(limit.value),parseInt(offset.value));
         });
-        
+
         $(ACTIONS.NEXT).click(function(){
             offset.value = parseInt(offset.value) + 10;
             loadingData(parseInt(limit.value),parseInt(offset.value));
         });
-    }
+    };
 
     return {
         init: function() {

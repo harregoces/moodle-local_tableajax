@@ -37,6 +37,8 @@ use local_tableajax\Records;
 class external extends \external_api {
 
     /**
+     * Returns description of method parameters
+     * 
      * @return \external_function_parameters
      */
     public static function get_data_parameters() {
@@ -47,6 +49,8 @@ class external extends \external_api {
     }
 
     /**
+     * Returns the data for the table
+     * 
      * @param $limit
      * @param $offset
      * @return array
@@ -66,6 +70,8 @@ class external extends \external_api {
     }
 
     /**
+     * Returns description of method result value.
+     * 
      * @return \external_multiple_structure
      */
     public static function get_data_returns() {

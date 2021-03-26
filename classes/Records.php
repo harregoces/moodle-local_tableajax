@@ -18,9 +18,18 @@ namespace local_tableajax;
 defined('MOODLE_INTERNAL') || die();
 require_once("$CFG->libdir/externallib.php");
 
+/**
+ * Class Records
+ * 
+ * @package local_tableajax
+ * @copyright  2021 Hernan Arregoces <harregoces@gmail.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 class Records {
 
     /**
+     * Returns records for specific table
+     * 
      * @param $limit
      * @param $offset
      * @return array

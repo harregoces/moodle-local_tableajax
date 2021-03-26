@@ -14,6 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * External setting page for local_tableajax
+ *
+ * @package    local_tableajax
+ * @copyright  2021 Hernan Arregoces <harregoces@gmail.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 require('../../config.php');
 require_login();
 if (!has_capability('local/tableajax:configmagement', $PAGE->context)) {
