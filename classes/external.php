@@ -38,7 +38,7 @@ class external extends \external_api {
 
     /**
      * Returns description of method parameters
-     * 
+     *
      * @return \external_function_parameters
      */
     public static function get_data_parameters() {
@@ -50,14 +50,14 @@ class external extends \external_api {
 
     /**
      * Returns the data for the table
-     * 
-     * @param $limit
-     * @param $offset
+     *
+     * @param int $limit
+     * @param int $offset
      * @return array
      * @throws \dml_exception
      * @throws \invalid_parameter_exception
      */
-    public static function get_data($limit, $offset): array {
+    public static function get_data(int $limit, int $offset): array {
         $params = self::validate_parameters(self::get_data_parameters(),
             array(
                 'limit' => $limit,
@@ -71,7 +71,7 @@ class external extends \external_api {
 
     /**
      * Returns description of method result value.
-     * 
+     *
      * @return \external_multiple_structure
      */
     public static function get_data_returns() {

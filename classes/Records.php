@@ -20,7 +20,7 @@ require_once("$CFG->libdir/externallib.php");
 
 /**
  * Class Records
- * 
+ *
  * @package local_tableajax
  * @copyright  2021 Hernan Arregoces <harregoces@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -29,13 +29,13 @@ class Records {
 
     /**
      * Returns records for specific table
-     * 
-     * @param $limit
-     * @param $offset
+     *
+     * @param int $limit
+     * @param int $offset
      * @return array
      * @throws \dml_exception
      */
-    public function get_records($limit, $offset): array {
+    public function get_records(int $limit = 10, int $offset = 0): array {
         global $DB;
         $records = $DB->get_records('logstore_standard_log',
             null,
