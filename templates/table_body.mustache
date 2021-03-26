@@ -1,0 +1,49 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template loca_tableajax/settings
+    Template for ajax table.
+
+    Context variables required for this template:
+    * expressions - List of expressions containing index, name, expression and value
+
+    Example context (json):
+    {
+        "data": [
+            { "id": "1", "eventname": "Event Name", "component": "Component", "action": "Action", "target": "Target" }
+        ]
+    }
+}}
+{{#data}}
+    <tr>
+        <td>
+            {{id}}
+        </td>
+        <td>
+            {{eventname}}
+        </td>
+        <td>
+            {{component}}
+        </td>
+        <td>
+            {{action}}
+        </td>
+        <td>
+            {{target}}
+        </td>
+    </tr>
+{{/data}}
