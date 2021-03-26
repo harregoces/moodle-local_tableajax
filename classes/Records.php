@@ -22,11 +22,11 @@ class Records {
 
     public function get_records($limit, $offset) {
         global $DB;
-        $records = $DB->get_records('logstore_standard_log', 
-            null, 
-            'id ASC', 
-            'id, eventname, component, action, target', 
-            $offset, 
+        $records = $DB->get_records('logstore_standard_log',
+            null,
+            'id ASC',
+            'id, eventname, component, action, target',
+            $offset,
             $limit
         );
         $returned = array();
