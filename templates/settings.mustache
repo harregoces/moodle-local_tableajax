@@ -45,14 +45,16 @@
         {{> local_tableajax/table_body}}
     </tbody>
     <tfoot>
-        <th colspan="4">
-            <button class="btn btn-primary" data-action="previous" disabled>
-                {{#str}}tableheader_previous, local_tableajax{{/str}}
-            </button>
-            <button class="btn btn-secondary" data-action="next">
-                {{#str}}tableheader_next, local_tableajax{{/str}}
-            </button>
-        </th>
+        <tr>
+            <th colspan="4">
+                <button class="btn btn-primary" data-action="previous" disabled>
+                    {{#str}}tableheader_previous, local_tableajax{{/str}}
+                </button>
+                <button class="btn btn-secondary" data-action="next">
+                    {{#str}}tableheader_next, local_tableajax{{/str}}
+                </button>
+            </th>
+        </tr>
     </tfoot>
 </table>
 <input type="hidden" name="limit" id="limit" value="10">
