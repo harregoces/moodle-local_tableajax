@@ -19,8 +19,8 @@ defined('MOODLE_INTERNAL') || die();
 /**
  * External functions and service definitions.
  *
- * @package    message_popup
- * @copyright  2016 Ryan Wyllie <ryan@moodle.com>
+ * @package    local_tableajax
+ * @copyright  2021 Hernan Arregoces <harregoces@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 $functions = array(

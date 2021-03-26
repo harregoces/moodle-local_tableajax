@@ -18,7 +18,7 @@
  * Capabilities for local table ajax.
  *
  * @package    local_tableajax
- * @copyright 2020 Hernan Arregoces <harregoces@gmail.com>
+ * @copyright 2021 Hernan Arregoces <harregoces@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
