@@ -24,3 +24,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 require('../../config.php');
+require_login();

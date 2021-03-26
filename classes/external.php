@@ -36,6 +36,9 @@ use local_tableajax\Records;
  */
 class external extends \external_api {
 
+    /**
+     * @return \external_function_parameters
+     */
     public static function get_data_parameters() {
         $limit = new \external_value(PARAM_INT, 'result set limit', VALUE_DEFAULT, 0);
         $offset = new \external_value(PARAM_INT, 'Result set offset', VALUE_DEFAULT, 0);
@@ -43,8 +46,14 @@ class external extends \external_api {
         return new \external_function_parameters($params);
     }
 
+    /**
+     * @param $limit
+     * @param $offset
+     * @return array
+     * @throws \dml_exception
+     * @throws \invalid_parameter_exception
+     */
     public static function get_data($limit, $offset): array {
-        global $DB;
         $params = self::validate_parameters(self::get_data_parameters(),
             array(
                 'limit' => $limit,
@@ -56,6 +65,9 @@ class external extends \external_api {
         return $data;
     }
 
+    /**
+     * @return \external_multiple_structure
+     */
     public static function get_data_returns() {
         return new \external_multiple_structure(
             new \external_single_structure(array(

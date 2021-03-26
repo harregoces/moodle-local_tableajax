@@ -20,7 +20,13 @@ require_once("$CFG->libdir/externallib.php");
 
 class Records {
 
-    public function get_records($limit, $offset) {
+    /**
+     * @param $limit
+     * @param $offset
+     * @return array
+     * @throws \dml_exception
+     */
+    public function get_records($limit, $offset): array {
         global $DB;
         $records = $DB->get_records('logstore_standard_log',
             null,
