@@ -15,10 +15,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
-* @package    local_tableajax
-* @author     Hernan Arregoces <harregoces@gmail.com>
-* @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later 
-*/
+ * Table Ajax.
+ *
+ * @package    local_tableajax
+ * @copyright 2021 Hernan Arregoces <harregoces@gmail.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 $string['pluginname'] = 'Table ajax Demo';
 $string['tableheader_id'] = 'ID';

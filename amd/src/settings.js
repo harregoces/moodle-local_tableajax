@@ -5,7 +5,7 @@
  * @copyright  2021 Hernan Arregoces <harregoces@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-define(['jquery', 
+define(['jquery',
     'core/ajax',
     'core/notification',
     'core/templates',
@@ -25,7 +25,7 @@ define(['jquery',
     var table_body = document.getElementById('table_tableajax_body');
     var limit = document.getElementById('limit');
     var offset = document.getElementById('offset');
-    
+
     var TableActions = function() {
         this.registerEvents();
     };
@@ -53,23 +53,23 @@ define(['jquery',
         });
         promise.fail(notification.exception);
     }
-    
+
     TableActions.prototype.registerEvents = function() {
         
-        $(ACTIONS.PREVIOUS).click(function(e) {
+        $(ACTIONS.PREVIOUS).click(function() {
             offset.value = parseInt(offset.value) - 10;
             loadingData(parseInt(limit.value),parseInt(offset.value));
         });
         
-        $(ACTIONS.NEXT).click(function(e){
+        $(ACTIONS.NEXT).click(function(){
             offset.value = parseInt(offset.value) + 10;
-            loadingData(parseInt(limit.value),parseInt(offset.value))
+            loadingData(parseInt(limit.value),parseInt(offset.value));
         });
     }
-    
+
     return {
         init: function() {
-            return new TableActions()
+            return new TableActions();
         }
     };
 });
