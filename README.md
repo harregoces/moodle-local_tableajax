@@ -1,4 +1,4 @@
-Demo Table Using Ajax plugin [![Build Status](https://www.travis-ci.com/harregoces/moodle-local_bboard.svg?token=YD8rAAf8Bp2UGgxnXfDy&branch=master)](https://www.travis-ci.com/harregoces/moodle-local_bboard)
+Demo Table Using Ajax plugin [![Build Status](https://www.travis-ci.com/harregoces/moodle-local_tableajax.svg?branch=master)](https://www.travis-ci.com/harregoces/moodle-local_tableajax)
 ==================
 
 Information
