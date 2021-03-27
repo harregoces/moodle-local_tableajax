@@ -1,7 +1,7 @@
 /**
  * Setting js for local_tableajax.
  *
- * @module     local_tableajax/settings
+ * @module     local_tableajax
  * @copyright  2021 Hernan Arregoces <harregoces@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -29,7 +29,7 @@ define(['jquery',
     var TableActions = function() {
         this.registerEvents();
     };
-
+    
     var loadingData = function(limit, offset) {
         if (parseInt(offset) > 0) {
             $(ACTIONS.PREVIOUS).removeAttr('disabled');

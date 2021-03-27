@@ -23,5 +23,5 @@
  */
 
 defined('MOODLE_INTERNAL') || die();
-//require('../../config.php');
-//require_login();
+require(__DIR__.'/../../config.php');
+require_login();
