@@ -29,7 +29,7 @@ define(['jquery',
     var TableActions = function() {
         this.registerEvents();
     };
-    
+
     var loadingData = function(limit, offset) {
         if (parseInt(offset) > 0) {
             $(ACTIONS.PREVIOUS).removeAttr('disabled');
